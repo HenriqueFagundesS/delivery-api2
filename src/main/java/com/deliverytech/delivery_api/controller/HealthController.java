@@ -1,22 +1,24 @@
-package com.deliverytech.controller;
+package com.deliverytech.delivery_api.controller;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
- 
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
- 
+
 /**
  * Controller responsável pelos endpoints de monitoramento da aplicação
  * Demonstra o uso de recursos modernos do Java 21
  */
 @RestController
 public class HealthController {
- 
+
     private static final DateTimeFormatter FORMATTER =
         DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-   /**
+
+    /**
      * Endpoint para verificar o status da aplicação
      * @return Map com informações de saúde da aplicação
      */
@@ -32,10 +34,11 @@ public class HealthController {
                 ? getClass().getPackage().getImplementationVersion() : "4.11.x",
             "environment", "development"
         );
- 
+
         return ResponseEntity.ok(healthInfo);
-    }  
-/**
+    }
+
+    /**
      * Endpoint com informações detalhadas da aplicação
      * Demonstra o uso de Records (Java 14+)
      * @return AppInfo com dados da aplicação
@@ -51,10 +54,11 @@ public class HealthController {
             LocalDateTime.now().format(FORMATTER),
             "Sistema de delivery moderno desenvolvido com as mais recentes tecnologias Java"
         );
- 
+
         return ResponseEntity.ok(appInfo);
-    }  
- /**
+    }
+
+    /**
      * Record para demonstrar recurso do Java 14+ (disponível no JDK 21)
      * Records são classes imutáveis ideais para DTOs
      */
