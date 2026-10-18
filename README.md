@@ -4,7 +4,7 @@ API REST desenvolvida com Spring Boot para um sistema de delivery moderno.
 
 ## Tecnologias
 
-- Java 21
+- Java 25 (latest LTS)
 - Spring Boot 4.x
 - Spring Data JPA
 - H2 Database (in-memory)
@@ -35,7 +35,7 @@ A aplicação sobe na porta `8080`.
   "status": "FUNCIONANDO !!!",
   "timestamp": "2026-10-15 21:35:00",
   "service": "Delivery API AGOSTO",
-  "javaVersion": "21",
+  "javaVersion": "25",
   "springBootVersion": "4.11.x",
   "environment": "development"
 }
@@ -47,7 +47,7 @@ A aplicação sobe na porta `8080`.
   "application": "Delivery Tech API",
   "version": "1.0.0",
   "developer": "Henrique Fagundes Domingos Souza",
-  "javaVersion": "21",
+  "javaVersion": "25",
   "framework": "Spring Boot 4.11.x",
   "timestamp": "2026-10-15 21:35:00",
   "description": "Sistema de delivery moderno desenvolvido com as mais recentes tecnologias Java"
